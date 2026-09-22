@@ -1,0 +1,1014 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#0f1020">
+
+    <title>For Someone Special ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         MUSIC
+    =========================================== -->
+
+    <audio id="backgroundMusic"
+           src="assets/music.mp3"
+           loop
+           preload="auto">
+    </audio>
+
+    <button id="musicButton"
+            class="music-button hidden"
+            aria-label="Play atau pause musik">
+        🎵
+    </button>
+
+
+    <!-- ==========================================
+         FLOATING PARTICLES
+    =========================================== -->
+
+    <div id="particles"></div>
+
+
+    <!-- ==========================================
+         CHAPTER PROGRESS
+    =========================================== -->
+
+    <div id="chapterProgress" class="chapter-progress hidden">
+        <span class="progress-dot active"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+        <span class="progress-dot"></span>
+    </div>
+
+
+    <!-- ==========================================
+         CHAPTER 0
+         THE ENVELOPE
+    =========================================== -->
+
+    <section id="chapter0" class="chapter intro-screen">
+
+        <div class="stars"></div>
+
+        <div class="envelope-container">
+
+            <div class="intro-small">
+                A little surprise for you...
+            </div>
+
+            <div id="envelope" class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-paper">
+                    <div class="paper-text">
+                        For someone<br>
+                        very special ❤️
+                    </div>
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+            <h1 class="intro-title">
+                Untuk seseorang<br>
+                yang sangat spesial...
+            </h1>
+
+            <p class="intro-subtitle">
+                Jangan buka kalau kamu belum siap ❤️
+            </p>
+
+            <button id="openGiftButton" class="primary-button">
+                Open My Birthday Gift
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         MAIN JOURNEY
+    =========================================== -->
+
+    <main id="journey" class="journey hidden">
+
+
+        <!-- ======================================
+             CHAPTER 1
+             WELCOME
+        ======================================= -->
+
+        <section id="chapter1" class="chapter welcome-section">
+
+            <div class="chapter-content">
+
+                <p class="eyebrow reveal">
+                    TODAY IS DIFFERENT
+                </p>
+
+                <h2 class="hero-line reveal">
+                    Today isn't<br>
+                    just another day.
+                </h2>
+
+                <p class="hero-line second reveal">
+                    Today is the day<br>
+                    <span>you were born.</span>
+                </p>
+
+                <div class="age-container reveal">
+
+                    <div class="age-number">
+                        25
+                    </div>
+
+                    <div class="age-label">
+                        YEARS OF YOU
+                    </div>
+
+                </div>
+
+                <h1 class="birthday-title reveal">
+                    Happy Birthday,<br>
+                    <span id="boyfriendName1">[NAMA_PACAR]</span> ❤️
+                </h1>
+
+                <button class="next-button"
+                        data-next="chapter2">
+                    Start The Journey
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 2
+             BEFORE I MET YOU
+        ======================================= -->
+
+        <section id="chapter2" class="chapter before-section">
+
+            <div class="chapter-content">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 01
+                </p>
+
+                <h2 class="section-title reveal">
+                    Before I Met You
+                </h2>
+
+                <div class="diary-card reveal">
+
+                    <div class="diary-date">
+                        ONCE UPON A TIME...
+                    </div>
+
+                    <p>
+                        Before you came into my life,
+                        there was just an ordinary story.
+                    </p>
+
+                    <p class="placeholder-text">
+                        [CERITA SINGKAT SEBELUM BERTEMU]
+                    </p>
+
+                </div>
+
+                <div class="story-transition reveal">
+
+                    <span>And then...</span>
+
+                    <div class="heart-pulse">
+                        ❤️
+                    </div>
+
+                    <strong>
+                        I met you.
+                    </strong>
+
+                </div>
+
+                <button class="next-button"
+                        data-next="chapter3">
+                    Continue
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 3
+             MEMORIES
+        ======================================= -->
+
+        <section id="chapter3" class="chapter memories-section">
+
+            <div class="chapter-content wide">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 02
+                </p>
+
+                <h2 class="section-title reveal">
+                    Our Little Memories
+                    <span>❤️</span>
+                </h2>
+
+                <p class="section-description reveal">
+                    Some moments are small,
+                    but somehow they stay with us.
+                </p>
+
+
+                <div class="photo-grid">
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo1.jpg"
+                         data-caption="[KENANGAN 1]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo1.jpg"
+                                 alt="Kenangan 1">
+                        </div>
+
+                        <p>Kenangan #01</p>
+
+                    </div>
+
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo2.jpg"
+                         data-caption="[KENANGAN 2]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo2.jpg"
+                                 alt="Kenangan 2">
+                        </div>
+
+                        <p>Kenangan #02</p>
+
+                    </div>
+
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo3.jpg"
+                         data-caption="[KENANGAN 3]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo3.jpg"
+                                 alt="Kenangan 3">
+                        </div>
+
+                        <p>Kenangan #03</p>
+
+                    </div>
+
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo4.jpg"
+                         data-caption="[KENANGAN 4]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo4.jpg"
+                                 alt="Kenangan 4">
+                        </div>
+
+                        <p>Kenangan #04</p>
+
+                    </div>
+
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo5.jpg"
+                         data-caption="[KENANGAN 5]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo5.jpg"
+                                 alt="Kenangan 5">
+                        </div>
+
+                        <p>Kenangan #05</p>
+
+                    </div>
+
+
+                    <div class="memory-card reveal"
+                         data-photo="assets/photo6.jpg"
+                         data-caption="[KENANGAN 6]">
+
+                        <div class="photo-wrapper">
+                            <img src="assets/photo6.jpg"
+                                 alt="Kenangan 6">
+                        </div>
+
+                        <p>Kenangan #06</p>
+
+                    </div>
+
+                </div>
+
+
+                <button class="next-button"
+                        data-next="chapter4">
+                    There is more...
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 4
+             THINGS I LOVE ABOUT YOU
+        ======================================= -->
+
+        <section id="chapter4" class="chapter things-section">
+
+            <div class="chapter-content wide">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 03
+                </p>
+
+                <h2 class="section-title reveal">
+                    Things I Love About You
+                </h2>
+
+                <p class="section-description reveal">
+                    Maybe you don't realize it,
+                    but there are so many little things...
+                </p>
+
+
+                <div class="love-grid">
+
+                    <div class="love-card reveal">
+                        <span>01</span>
+                        <h3>Your Smile</h3>
+                        <p>
+                            [TULIS SESUATU TENTANG SENYUMNYA]
+                        </p>
+                    </div>
+
+
+                    <div class="love-card reveal">
+                        <span>02</span>
+                        <h3>Your Voice</h3>
+                        <p>
+                            [TULIS SESUATU TENTANG SUARANYA]
+                        </p>
+                    </div>
+
+
+                    <div class="love-card reveal">
+                        <span>03</span>
+                        <h3>Your Little Habits</h3>
+                        <p>
+                            [KEBIASAAN KECILNYA]
+                        </p>
+                    </div>
+
+
+                    <div class="love-card reveal">
+                        <span>04</span>
+                        <h3>The Way You Care</h3>
+                        <p>
+                            [CARA DIA MEMPERLAKUKANMU]
+                        </p>
+                    </div>
+
+
+                    <div class="love-card reveal">
+                        <span>05</span>
+                        <h3>You Make Me Laugh</h3>
+                        <p>
+                            [MOMEN LUCU KALIAN]
+                        </p>
+                    </div>
+
+
+                    <div id="secretCard"
+                         class="love-card secret-card reveal">
+
+                        <span>06</span>
+
+                        <h3>There is one more...</h3>
+
+                        <p>
+                            Tap to discover
+                        </p>
+
+                        <div class="secret-message">
+                            [PESAN RAHASIA UNTUK DIA]
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="next-button"
+                        data-next="chapter5">
+                    Our Story
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 5
+             OUR STORY
+        ======================================= -->
+
+        <section id="chapter5" class="chapter timeline-section">
+
+            <div class="chapter-content wide">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 04
+                </p>
+
+                <h2 class="section-title reveal">
+                    Our Story
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot">
+                            01
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <small>
+                                THE BEGINNING
+                            </small>
+
+                            <h3>
+                                [MOMEN PERTAMA]
+                            </h3>
+
+                            <p>
+                                [CERITAKAN MOMEN INI]
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot">
+                            02
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <small>
+                                A SPECIAL MOMENT
+                            </small>
+
+                            <h3>
+                                [MOMEN KEDUA]
+                            </h3>
+
+                            <p>
+                                [CERITAKAN MOMEN INI]
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot">
+                            03
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <small>
+                                SOMEWHERE ALONG THE WAY
+                            </small>
+
+                            <h3>
+                                [MOMEN KETIGA]
+                            </h3>
+
+                            <p>
+                                [CERITAKAN MOMEN INI]
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot">
+                            04
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <small>
+                                TODAY
+                            </small>
+
+                            <h3>
+                                Your 25th Birthday
+                            </h3>
+
+                            <p>
+                                And somehow,
+                                you became one of the most
+                                important people in my life.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="next-button"
+                        data-next="chapter6">
+                    I Have Something To Tell You
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 6
+             LOVE LETTER
+        ======================================= -->
+
+        <section id="chapter6" class="chapter letter-section">
+
+            <div class="chapter-content">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 05
+                </p>
+
+                <h2 class="section-title reveal">
+                    A Letter For You
+                </h2>
+
+                <div id="letterEnvelope"
+                     class="letter-envelope reveal">
+
+                    <div class="letter-flap"></div>
+
+                    <div class="letter-paper">
+
+                        <div class="letter-content">
+
+                            <p>
+                                Dear
+                                <span id="boyfriendName2">
+                                    [NAMA_PACAR]
+                                </span>,
+                            </p>
+
+                            <p>
+                                Hari ini kamu bertambah satu tahun lagi.
+                            </p>
+
+                            <p>
+                                Aku tidak tahu apakah kata-kata ini
+                                cukup untuk menjelaskan betapa
+                                berartinya kamu untukku.
+                            </p>
+
+                            <p>
+                                Terima kasih karena sudah hadir.
+                                Terima kasih untuk semua tawa,
+                                cerita, perhatian, dan waktu
+                                yang kita bagi bersama.
+                            </p>
+
+                            <p>
+                                Aku tahu hidup tidak selalu mudah.
+                                Aku tahu kita tidak selalu sempurna.
+                                Tapi aku bersyukur pernah dan masih
+                                bisa berjalan bersamamu sejauh ini.
+                            </p>
+
+                            <p>
+                                Di usia 25 tahun ini,
+                                aku berharap kamu menemukan
+                                lebih banyak alasan untuk tersenyum.
+                            </p>
+
+                            <p>
+                                Semoga langkahmu semakin ringan.
+                                Semoga pekerjaan dan impianmu
+                                berjalan dengan baik.
+                                Semoga kamu selalu sehat.
+                            </p>
+
+                            <p>
+                                Dan kalau suatu hari nanti
+                                kamu merasa lelah...
+                            </p>
+
+                            <p class="special-line">
+                                ingat bahwa ada seseorang
+                                yang selalu berharap
+                                kamu baik-baik saja.
+                            </p>
+
+                            <p>
+                                Happy Birthday, sayang.
+                            </p>
+
+                            <p class="love-ending">
+                                I Love You ❤️
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button id="openLetterButton"
+                        class="primary-button reveal">
+                    Open The Letter ❤️
+                </button>
+
+
+                <button class="next-button hidden"
+                        id="afterLetterButton"
+                        data-next="chapter7">
+                    One Last Wish
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 7
+             MAKE A WISH
+        ======================================= -->
+
+        <section id="chapter7" class="chapter wish-section">
+
+            <div class="moon"></div>
+
+            <div class="chapter-content">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 06
+                </p>
+
+                <h2 class="section-title reveal">
+                    Make A Wish
+                </h2>
+
+                <p class="wish-text reveal">
+                    Before the journey ends...
+                </p>
+
+                <p class="wish-text large reveal">
+                    Make a wish.
+                </p>
+
+
+                <div id="birthdayCake"
+                     class="birthday-cake reveal">
+
+                    <div class="cake-top">
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+
+                    <div class="cake-middle"></div>
+
+                    <div class="cake-bottom"></div>
+
+                </div>
+
+
+                <button id="wishButton"
+                        class="primary-button reveal">
+                    Make a Wish ✨
+                </button>
+
+
+                <p id="wishMessage"
+                   class="wish-message hidden">
+                    I hope your wish comes true. ❤️
+                </p>
+
+
+                <button id="wishContinue"
+                        class="next-button hidden"
+                        data-next="chapter8">
+                    Continue
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 8
+             HIDDEN MESSAGE
+        ======================================= -->
+
+        <section id="chapter8" class="chapter hidden-message-section">
+
+            <div class="chapter-content">
+
+                <p class="eyebrow reveal">
+                    CHAPTER 07
+                </p>
+
+                <h2 class="section-title reveal">
+                    Wait...
+                </h2>
+
+                <p class="mystery-text reveal">
+                    There's still one thing
+                    you haven't found.
+                </p>
+
+
+                <button id="findButton"
+                        class="primary-button reveal">
+                    Find It
+                </button>
+
+
+                <div id="foundMessage"
+                     class="found-message hidden">
+
+                    <p>
+                        You found it.
+                    </p>
+
+                    <strong>
+                        But this isn't the surprise.
+                    </strong>
+
+                </div>
+
+
+                <button id="mysteryContinue"
+                        class="next-button hidden"
+                        data-next="chapter9">
+                    What surprise?
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CHAPTER 9
+             COUNTDOWN
+        ======================================= -->
+
+        <section id="chapter9" class="chapter countdown-section">
+
+            <div class="chapter-content">
+
+                <p class="eyebrow">
+                    ONE LAST THING
+                </p>
+
+                <h2 class="countdown-question">
+                    Are you ready?
+                </h2>
+
+
+                <div id="countdown"
+                     class="countdown-number">
+                    3
+                </div>
+
+                <p id="countdownText"
+                   class="countdown-text">
+                    Get ready...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             FINAL SURPRISE
+        ======================================= -->
+
+        <section id="final"
+                 class="chapter final-section">
+
+            <div id="finalParticles"
+                 class="final-particles"></div>
+
+
+            <div class="chapter-content final-content">
+
+                <div class="final-small reveal">
+                    AND HERE IT IS...
+                </div>
+
+
+                <h2 class="final-title reveal">
+                    Happy Birthday
+                </h2>
+
+
+                <div id="finalName"
+                     class="final-name reveal">
+                    [NAMA_PACAR]
+                </div>
+
+
+                <div class="final-age reveal">
+                    25
+                    <span>❤️</span>
+                </div>
+
+
+                <p class="final-intro reveal">
+                    Welcome to a new chapter
+                    of your life.
+                </p>
+
+
+                <div class="final-wishes">
+
+                    <p class="final-wish reveal">
+                        I wish you happiness.
+                    </p>
+
+                    <p class="final-wish reveal">
+                        I wish you success.
+                    </p>
+
+                    <p class="final-wish reveal">
+                        I wish you good health.
+                    </p>
+
+                    <p class="final-wish reveal">
+                        And I wish...
+                    </p>
+
+                    <p class="final-wish highlight reveal">
+                        that you always have someone
+                        beside you who truly cares about you.
+                    </p>
+
+                </div>
+
+
+                <!-- FINAL PHOTO -->
+
+                <div class="final-photo reveal">
+
+                    <img src="assets/final-photo.jpg"
+                         alt="Our favorite memory">
+
+                </div>
+
+
+                <div class="final-message reveal">
+
+                    <h3>
+                        Happy Birthday,
+                        My Favorite Person ❤️
+                    </h3>
+
+                    <p>
+                        Semoga aku masih bisa menjadi
+                        bagian dari banyak ulang tahunmu
+                        berikutnya.
+                    </p>
+
+                    <strong>
+                        I Love You.
+                    </strong>
+
+                </div>
+
+
+                <button id="replayButton"
+                        class="replay-button reveal">
+                    ↻ Replay Our Journey
+                </button>
+
+
+                <div class="signature reveal">
+                    Made with ❤️ by
+                    <span id="girlfriendName">
+                        [NAMA_KAMU]
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         PHOTO MODAL
+    =========================================== -->
+
+    <div id="photoModal"
+         class="photo-modal">
+
+        <button id="closeModal"
+                class="close-modal">
+            ×
+        </button>
+
+        <div class="modal-content">
+
+            <img id="modalImage"
+                 src=""
+                 alt="Memory">
+
+            <p id="modalCaption"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
